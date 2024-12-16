@@ -163,7 +163,7 @@ footer {
     object-fit: cover; /* Ensures the image doesn't stretch */
     margin: 20px auto; /* Adds spacing and centers the image */
     display: block; /* Makes the image a block element for centering */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow for aesthetics */
   }
 
 /* Remove default link styling */
