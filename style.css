@@ -1,200 +1,171 @@
-/* ==========================
-   General Reset
-   ========================== */
-/* Resets margins, padding, and box-sizing for all elements to ensure consistency across browsers */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* ==========================
-   Body Styling
-   ========================== */
-/* Sets general styles for the entire body of the document */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Georgia', serif; /* Sets a serif font for a clean and elegant look */
-    line-height: 1.6; /* Adds spacing between lines of text for better readability */
-    color: #8A6E3B; /* Earthy brown color for text */
-    background-color: #FDF6E3; /* Soft beige background for a clean and warm appearance */
-    scroll-behavior: smooth; /* Enables smooth scrolling behavior for anchor links */
-}
-
-/* ==========================
-   Header Styling
-   ========================== */
-/* Styles the header container, including background, padding, and layout */
-header {
-    background: #8A6E3B; /* Earthy brown background color */
-    color: #FDF6E3; /* Soft beige text color */
-    padding: 20px; /* Adds spacing inside the header */
-    display: flex; /* Enables flexbox for layout */
-    justify-content: space-between; /* Positions content at both ends (logo and nav links) */
-    align-items: center; /* Vertically centers content */
-}
-
-/* Logo Styling within the Header */
-header .logo {
-    font-size: 1.5em; /* Makes the logo text slightly larger */
-    text-decoration: none; /* Removes underline from the logo link */
-    color: #FDF6E3; /* Soft beige color for logo text */
-    font-weight: bold; /* Makes the logo bold */
-}
-
-/* Navigation Menu Styling */
-header nav ul {
-    list-style: none; /* Removes bullet points from the navigation menu */
-    display: flex; /* Aligns navigation links horizontally */
-}
-
-header nav ul li {
-    margin-left: 20px; /* Adds spacing between each navigation item */
-}
-
-/* Navigation Links Styling */
-header nav ul li a {
-    
-    text-decoration: none; /* Removes underline from navigation links */
-    color: #5D6C3E; /* Earthy green hover effect */
-    transition: color 0.3s; /* Smooth color change on hover */
-}
-
-header nav ul li a:hover {
-    color: #bf0ecb; /* Highlight color (yellow) when hovering over links */
-}
-
-/* ==========================
-   Section Styling
-   ========================== */
-/* General styling for all sections */
-section {
-    padding: 50px 20px; /* Adds space inside sections (top/bottom and sides) */
-    text-align: center; /* Centers text horizontally */
-}
-
-/* Section Headings (h1) */
-section h1 {
-    margin-bottom: 20px; /* Adds space below the heading */
-    color: #6f5119; /* Earthy brown for section titles like (About Me, Skills,...) */
-}
-
-/* Paragraph and List Styling within Sections */
-section p, section ul {
-    font-size: 1.1em; /* Slightly larger font size for better readability */
-}
-
-/* Skills Section Styling */
-#skills ul {
-    list-style: none; /* Removes bullet points */
-    display: flex; /* Aligns skills horizontally */
-    justify-content: center; /* Centers skills in the section */
-    gap: 20px; /* Adds spacing between each skill item */
-}
-
-/* ==========================
-   Projects Section Styling
-   ========================== */
-/* Styling for individual project cards */
-#projects .project {
-    background: #fff; /* White background for project cards */
-    margin: 20px auto; /* Adds space around the cards and centers them */
-    padding: 15px; /* Adds space inside the cards */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
-    width: 80%; /* Restricts the width of project cards */
-    border-radius: 5px; /* Adds rounded corners to the cards */
-}
-
-/* ==========================
-   Contact Section Styling
-   ========================== */
-/* Styling for links inside the Contact section */
-#contact a {
-    text-decoration: none; /* Removes underline from contact links */
-    color: #7d7102; /* Dark gray color for links */
-    font-weight: bold; /* Makes the text bold */
-}
-
-#contact a:hover {
-    color: #ed0505; /* Highlight color when hovering over links */
-}
-
-/* ==========================
-   Footer Styling
-   ========================== */
-/* Footer container styling */
-footer {
-    background: #27512d; /* Dark green footer background */
-    color: #FDF6E3; /* Soft beige text for contrast */
-    text-align: center; /* Centers text in the footer */
-    padding: 10px 0; /* Adds space above and below the footer text */
-}
-
-/* Navigation Link Hover Effect Specific to Header */
-.header a:hover {
-    color: #7d7102; /* Yellow flower hover effect for links in the header */
-}
-
-/* ==========================
-   Button Styling
-   ========================== */
-/* General Button Styling */
-.visit-btn {
-    background-color: #27512d; /* Dark red background for the button */
-    color: #FDF6E3; /* Soft beige text color */
-    border: none; /* Removes the default button border */
-    padding: 10px 20px; /* Adds space inside the button */
-    border-radius: 5px; /* Rounds the button corners */
-    font-weight: bold; /* Makes button text bold */
-    cursor: pointer; /* Shows a pointer cursor when hovering over the button */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
-}
-
-.visit-btn:hover {
-    background-color: #5D6C3E; /* Changes button background color to green on hover */
-}
-
-/* Profile Picture Styling */
-.profile-picture {
-    width: 150px; /* Adjust width of the image */
-    height: 150px; /* Maintain equal height for a circle */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image doesn't stretch */
-    margin: 20px auto; /* Adds spacing and centers the image */
-    display: block; /* Makes the image a block element for centering */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow for aesthetics */
   }
-
-/* Remove default link styling */
-.visit-link {
-    text-decoration: none; /* Removes underline */
-    display: inline-block; /* Ensures it behaves like a block/button */
-}
-
-/* Button Styling */
-.visit-btn {
-    background-color: #195c3b; /* GitHub frame color */
-    color: #FDF6E3; /* Text color */
-    border: none;
-    padding: 10px 20px; /* Space inside the button */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold; /* Bold text */
-    cursor: pointer; /* Pointer cursor */
-    transition: background-color 0.3s ease; /* Smooth hover transition */
-    display: flex; /* Align content (icon and text) horizontally */
-    align-items: center; /* Vertically center content */
-}
-
-/* Image inside the button */
-.visit-btn img {
-    width: 20px; /* Set the width of the GitHub logo */
-    height: 20px; /* Set the height of the GitHub logo */
-    margin-right: 8px; /* Space between image and text */
-    object-fit: contain; /* Ensures the image fits within the frame */
-}
-
-.visit-btn:hover {
-    background-color: #d40808; /* Slightly darker background on hover */
-}
- 
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  /* Header Styling */
+  .header {
+    background: #333; /* Dark background */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 50px; /* Fully rounded header */
+    margin: 20px auto; /* Adds spacing at the top */
+    max-width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header .logo {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #fff;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  /* Visit GitHub Button */
+  .visit-btn {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .visit-btn:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 10%;
+    min-height: 100vh;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .role {
+    font-size: 1.5em;
+    color: #6a11cb;
+  }
+  
+  .hero-buttons {
+    margin: 20px 0;
+  }
+  
+  .btn {
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #333;
+    color: #fff;
+  }
+  
+  .social-icons a {
+    color: #333;
+    font-size: 1.8em;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #6a11cb;
+  }
+  
+  .hero-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 10px solid #f2f2f2;
+  }
+  
+  /* About Section */
+  #about {
+    padding: 80px 10%;
+    text-align: center;
+  }
+  
+  #about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

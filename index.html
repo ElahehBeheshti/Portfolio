@@ -1,86 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Portfolio Website</title>
-      <link rel= "stylesheet" href= "style.css">
-      <link rel= "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Link to Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <!-- Logo -->
+    <a href="#" class="logo">Elaheh Beheshti</a>
 
-    <!-- Header Section -->
-    <header class="header">
-      <a href="#" class="logo"><span>Elaheh Beheshti</span></a>
+    <!-- Navigation Links -->
+    <nav>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#skills">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="https://github.com/ElahehBeheshti" target="_blank" class="visit-link">
-      <button class="visit-btn">
-        <img src="Assets/images/GitHub.jpeg" alt="GitHub Logo" class="icon"> 
+    </nav>
 
+    <!-- Visit GitHub Button -->
+    <a href="https://github.com/ElahehBeheshti" target="_blank" class="visit-btn">Visit GitHub</a>
+  </header>
 
-            </button>
-          </a>
-      
-    </header>
-    
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hi, I'm</h2>
+      <h1>Elaheh Beheshti</h1>
+      <h3 class="role">Data Analyst</h3>
+      <div class="hero-buttons">
+        <!-- Resume Download Button -->
+        <a href="Assets/Elaheh_Resume.pdf" download class="btn">Download CV</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/ElahehBeheshti" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/beheshtelaheh" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="Assets/images/Ela.jpeg" alt="Elaheh Beheshti">
+    </div>
+  </section>
 
   <!-- About Section -->
   <section id="about">
     <h1>About Me</h1>
-    <img src="Assets/images/Ela.jpeg" alt="Ela" class="profile-picture">
-
-
-    <p>Hello! My name is Elaheh, I am a Data Analyst skilled in transforming complex datasets into actionable insights using Python, SQL, and Power BI, with a strong foundation in accounting and SAP (FI/CO) ERP systems. 
-      My expertise spans data-driven decision-making, financial reporting, and process optimization, with a focus on streamlining workflows and enhancing operations to achieve measurable results.</p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <h1>Skills</h1>
-    <ul>
-      <li>Python</li>
-      <li>SQL</li>
-      <li>Data Cleaning and manipulation</li>
-      <li>Machine Learning Techniques</li>
-      <li>Data Visualization with Python and BI tools</li>
-      <li>Financial Analysis</li>
-
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h1>Projects</h1>
-    <div class="project">
-      <h2>Project 1</h2>
-      <p>Description of Project 1</p>
-    </div>
-    <div class="project">
-      <h2>Project 2</h2>
-      <p>Description of Project 2</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h1>Contact Me</h1>
-    <p>Email: Elahehbht@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/beheshtelaheh" target="_blank">LinkedIn Profile</a>
+    <p>
+      Hello! I am a Data Analyst skilled in transforming complex datasets into actionable insights using Python, SQL, and Power BI, with a strong foundation in accounting and SAP (FI/CO) ERP systems. My expertise spans data-driven decision-making, financial reporting, and process optimization.
     </p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <p>&copy; 2024 Elaheh Beheshti. All rights reserved.</p>
   </footer>
-
-  <!-- JavaScript Link -->
-  <script src="script.js"></script>
 </body>
 </html>
-
