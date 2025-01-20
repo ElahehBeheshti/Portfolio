@@ -271,20 +271,22 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   width: 30%; /* Fixed width for the square shape */
-  padding: 15px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 500px; /* Ensures a consistent base height */
+  height: auto; /* Allows height to grow based on content */
+  overflow: hidden; /* Ensures content does not overflow out of the card */
 }
 
 .project-card img {
-  width: 100%; /* Make the image fill the card's width */
-  height: 150px; /* Set a fixed height for consistency */
-  object-fit: cover; /* Ensure the image scales proportionally and fits nicely */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  margin-bottom: 15px; /* Add some spacing below the image */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px; /* Space between the image and the next element */
 }
-
 
 .project-card:hover {
   transform: translateY(-5px);
@@ -321,21 +323,10 @@
 
 /* Project Buttons */
 .project-buttons {
-  margin-top: 15px;
-}
-
-.project-buttons a {
-  text-decoration: none;
-  color: #fff;
-  background-color: #007bff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin: 5px;
-  transition: background-color 0.3s;
-}
-
-.project-buttons a:hover {
-  background-color: #0056b3;
+  margin-top: auto; /* Push buttons to the bottom of the card */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .project-buttons .btn {
@@ -382,4 +373,10 @@
 .project-links .btn:hover {
   background: linear-gradient(90deg, #2575fc, #6a11cb);
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .project-card img {
+    height: 150px; /* Smaller height for mobile screens */
+  }
 }
