@@ -238,55 +238,148 @@
 
 /* Projects Section */
 #projects {
-    padding: 50px 20px;
-    background-color: #f9f9f9; /* Light gray background */
-    text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
 }
 
+.project-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: left;
+}
 #projects h1 {
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.project {
-    background: #fff;
-    margin: 20px auto;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    max-width: 600px;
-    text-align: left;
+/* Project Container */
+.project-container {
+  display: flex;
+  flex-wrap: wrap; /* Makes the layout responsive */
+  justify-content: space-between;
+  gap: 20px; /* Spacing between project cards */
+}
+/* Project Card */
+.project-card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 30%; /* Fixed width for the square shape */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.project h2 {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
+.project-card img {
+  width: 100%; /* Make the image fill the card's width */
+  height: 150px; /* Set a fixed height for consistency */
+  object-fit: cover; /* Ensure the image scales proportionally and fits nicely */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  margin-bottom: 15px; /* Add some spacing below the image */
 }
 
-.project p {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 15px;
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.project-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 0.9em;
+  color: #666;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.tags span {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* Project Buttons */
+.project-buttons {
+  margin-top: 15px;
+}
+
+.project-buttons a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-buttons a:hover {
+  background-color: #0056b3;
+}
+
+.project-buttons .btn {
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project-buttons .btn:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+.project-card ul {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.project-card ul li {
+  font-size: 1em;
+  margin-bottom: 5px;
+  color: #333;
 }
 
 .project-links {
-    display: flex;
-    gap: 15px;
-    justify-content: left;
+  display: flex;
+  gap: 10px;
 }
 
 .project-links .btn {
-    text-decoration: none;
-    color: #fff;
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .project-links .btn:hover {
-    background: linear-gradient(90deg, #2575fc, #6a11cb);
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
 }
