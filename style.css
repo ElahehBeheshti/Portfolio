@@ -16,7 +16,7 @@
   
   /* Header Styling */
   .header {
-    background: #333; /* Dark background */
+    background: #1B4D3E; /* Headline background */
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -77,7 +77,7 @@
   
   /* Visit GitHub Button */
   .visit-btn {
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    background: linear-gradient(90deg, #0c9e1d, #662d91);
     color: #fff;
     padding: 8px 20px;
     border-radius: 50px;
@@ -89,7 +89,7 @@
   }
   
   .visit-btn:hover {
-    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    background: linear-gradient(90deg, #15b359, #6a11cb);
     transform: scale(1.05);
   }
   
@@ -152,7 +152,7 @@
 }
   
   .social-icons a {
-    color: #333;
+    color: #0a0a0a;
     font-size: 1.5em;
     transition: color 0.3s ease;
   }
@@ -181,21 +181,107 @@
     margin: 0 auto;
     font-size: 1em;
   }
+
+  /* Experience Section Styling */
+#experience {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#experience h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 800px;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+  border-left: 4px solid #6a11cb;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.timeline-item h2 {
+  font-size: 1.5em;
+  color: #6a11cb;
+  margin-bottom: 10px;
+}
+
+.timeline-item p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.timeline-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 0.9em;
+  color: #060606;
+}
+
+.timeline-item ul li {
+  margin-bottom: 5px;
+}
+
+/* Add connector line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 100%;
+  width: 4px;
+  background: #6a11cb;
+  border-radius: 4px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 8px;
+  width: 12px;
+  height: 12px;
+  background: #6a11cb;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #6a11cb;
+}
+
   
   /* Footer */
   footer {
-    background: #333;
-    color: #fff;
+    background: #1B4D3E;
+    color: #f5ecec;
     text-align: center;
     padding: 10px 0;
   }
   
   /* Responsive Design - Media Queries */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
+  @media (max-width: 768px) {
+    .timeline {
+      padding: 10px;
     }
+  
+    .timeline-item {
+      padding: 10px 20px;
+    }
+  }
+  
+  
 
     .nav-links {
         flex-direction: column; /* Stack links vertically */
